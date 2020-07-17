@@ -1,9 +1,10 @@
 
 
 Tic Tac Toe
- by Niharika Chawla
 
-[Ironhack Data Analytics part-time Amsterdam]
+
+
+Niharika Chawla [Ironhack Data Analytics part-time Amsterdam]
          18-06-2020
 
 
