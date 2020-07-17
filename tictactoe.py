@@ -10,20 +10,23 @@ def print_board():
     print(row[3:6])
     print(row[6:])
     
+    
+    
 go=0
 game=1
 count=0
 
-print('Welcome to Tic Tac Toe!')
-print("Consider a board with the nine positions numbered as follows")
+print('\n\n Welcome to Tic Tac Toe! \n')
+print("\n Consider a board with the nine positions numbered as follows \n")
 
 Sample_board=["1","2","3","4","5","6","7","8","9"]
 
 print(Sample_board[0:3])
 print(Sample_board[3:6])
-print(Sample_board[6:]) 
+print(Sample_board[6:])
 
-print("In order to win the game, a player must place three of their marks in a horizontal, vertical, or diagonal row")
+
+print("\n In order to win the game, a player must place three of their marks in a horizontal, vertical, or diagonal row \n")
 
 #"board" is a list of 9 strings representing the board 
 row=[" "," "," "," "," "," "," "," "," "]
@@ -33,38 +36,45 @@ while game ==1:
     while go != 1:
         #this explain position of x
         
-        move = int(input("which position do you want to put x in?"))
+        move = int(input("\nWhich position do you want to put an X in?\n "))
         if row[move-1]== " ":
-            row[move-1] = "x"
+            row[move-1] = "X"
             go = 1
             count = count + 1
         else:
-            print("That space has been taken")
+            print("\nThat space has been taken\n")
     #this explains the condition when x will win 
     
-        if row[0] =="x"and row[1] == "x" and row[2] =="x":
-                print("X wins")
+        if row[0] =="X"and row[1] == "X" and row[2] =="X":
+                print("\nCongratulations,X wins\n ")
                 board()
-        elif row[3] =="x"and row[4] == "x" and row[5] =="x":
-                print("X wins")
+                
+        elif row[3] =="X"and row[4] == "X" and row[5] =="X":
+                print("\n Congratulations,X wins\n ")
                 board()
-        elif row[6] =="x"and row[7] == "x" and row[8] =="x":
-                print("X wins")
+                
+        elif row[6] =="X"and row[7] == "X" and row[8] =="X":
+                print(" \nCongratulations,X wins\n ")
                 board()
-        elif row[0] =="x"and row[3] == "x" and row[6] =="x":
-                print("X wins")
+                
+        elif row[0] =="X"and row[3] == "X" and row[6] =="X":
+                print("\nCongratulations,X wins\n  ")
                 board()
-        elif row[1] =="x"and row[4] == "x" and row[7] =="x":
-                print("X wins")
+                
+        elif row[1] =="X"and row[4] == "X" and row[7] =="X":
+                print("\nCongratulations,X wins\n ")
                 board() 
-        elif row[2] =="x"and row[5] == "x" and row[8] =="x":
-                print("X wins")
+                
+        elif row[2] =="X"and row[5] == "X" and row[8] =="X":
+                print("\nCongratulations,X wins\n ")
+                board()
+                
+        elif row[0] =="X"and row[4] == "X" and row[8] =="X":
+                print("\nCongratulations,X wins\n ")
                 board() 
-        elif row[0] =="x"and row[4] == "x" and row[8] =="x":
-                print("X wins")
-                board()       
-        elif row[2] =="x"and row[4] == "x" and row[6] =="x":
-                print("X wins")
+                
+        elif row[2] =="X"and row[4] == "X" and row[6] =="X":
+                print("\nCongratulations,X wins\n ")
                 board()                
                 
                 
@@ -74,44 +84,44 @@ while game ==1:
     go=0
     
     if count == 9:
-        print("Game over,it's a draw")
+        print("\nGame over,it's a draw\n")
         sys.exit()
 
     while go != 1:
 
-        move = int(input("which position do you want to put o in?"))
+        move = int(input("\nWhich position do you want to put O in?\n "))
         if row[move-1]== " ":
-            row[move-1] = "o"
+            row[move-1] = "O"
             go = 1
             count = count + 1
         else:
-            print("That space has been taken")
+            print("\nThat space has been taken\n")
             
             #this explains the condition when "o"will win .
             
-        if row[0] =="o"and row[1] == "o" and row[2] =="o":
-                print("O wins")
+        if row[0] =="O"and row[1] == "O" and row[2] =="O":
+                print("\n Congratulations, O wins\n")
                 board()
-        elif row[3] =="o"and row[4] == "o" and row[5] =="o":
-                print("O wins")
+        elif row[3] =="O"and row[4] == "O" and row[5] =="O":
+                print("\n Congratulations, O wins\n")
                 board()
-        elif row[6] =="o"and row[7] == "o" and row[8] =="o":
-                print("O wins")
+        elif row[6] =="O"and row[7] == "O" and row[8] =="O":
+                print("\n Congratulations, O wins\n")
                 board()
-        elif row[0] =="o"and row[3] == "o" and row[6] =="o":
-                print("O wins")
+        elif row[0] =="O"and row[3] == "O" and row[6] =="O":
+                print("\n Congratulations, O wins\n")
                 board()
-        elif row[1] =="o"and row[4] == "o" and row[7] =="o":
-                print("O wins")
+        elif row[1] =="O"and row[4] == "O" and row[7] =="O":
+                print("\n Congratulations, O wins\n")
                 board() 
-        elif row[2] =="o"and row[5] == "o" and row[8] =="o":
-                print("O wins")
+        elif row[2] =="O"and row[5] == "O" and row[8] =="O":
+                print("\n Congratulations, O wins\n")
                 board() 
-        elif row[0] =="o"and row[4] == "o" and row[8] =="o":
-                print("O wins")
+        elif row[0] =="O"and row[4] == "O" and row[8] =="O":
+                print("\n Congratulations, O wins\n")
                 board()      
-        elif row[2] =="o"and row[4] == "o" and row[6] =="o":
-                print("O wins")
+        elif row[2] =="O"and row[4] == "O" and row[6] =="O":
+                print("\n Congratulations, O wins\n")
                 board()
     print_board() 
     
@@ -120,5 +130,5 @@ while game ==1:
     #this explains when it is going to be draw,if nobody wins
     
     if count == 9:
-        print("Game over,it's a draw")
+        print("\nGame over,it's a draw\n")
         sys.exit()
