@@ -1,4 +1,5 @@
 import sys
+import random
 
 # This function prints out the board that it was passed
 def board():
@@ -89,7 +90,8 @@ while game ==1:
 
     while go != 1:
 
-        move = int(input("\nWhich position do you want to put O in?\n "))
+        move = random.randint(1,9)
+        print("Computer has chosen",move)
         if row[move-1]== " ":
             row[move-1] = "O"
             go = 1
@@ -100,28 +102,28 @@ while game ==1:
             #this explains the condition when "o"will win .
             
         if row[0] =="O"and row[1] == "O" and row[2] =="O":
-                print("\n Congratulations, O wins\n")
+                print("\n Congratulations, Computer wins\n")
                 board()
         elif row[3] =="O"and row[4] == "O" and row[5] =="O":
-                print("\n Congratulations, O wins\n")
+                print("\n Congratulations, Computer wins\n")
                 board()
         elif row[6] =="O"and row[7] == "O" and row[8] =="O":
-                print("\n Congratulations, O wins\n")
+                print("\n Congratulations, Computer wins\n")
                 board()
         elif row[0] =="O"and row[3] == "O" and row[6] =="O":
-                print("\n Congratulations, O wins\n")
+                print("\n Congratulations, Computer wins\n")
                 board()
         elif row[1] =="O"and row[4] == "O" and row[7] =="O":
-                print("\n Congratulations, O wins\n")
+                print("\n Congratulations, Computer wins\n")
                 board() 
         elif row[2] =="O"and row[5] == "O" and row[8] =="O":
-                print("\n Congratulations, O wins\n")
+                print("\n Congratulations, Computer wins\n")
                 board() 
         elif row[0] =="O"and row[4] == "O" and row[8] =="O":
-                print("\n Congratulations, O wins\n")
+                print("\n Congratulations, Computer wins\n")
                 board()      
         elif row[2] =="O"and row[4] == "O" and row[6] =="O":
-                print("\n Congratulations, O wins\n")
+                print("\n Congratulations, Computer wins\n")
                 board()
     print_board() 
     
